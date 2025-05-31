@@ -1,0 +1,21 @@
+{
+  "name": "solana-ultra-fast-copy-trader",
+  "version": "1.0.0",
+  "description": "Ultra-fast Solana copy-trading bot",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "setup": "node src/utils/setupWizard.js",
+    "start": "node src/index-no-telegram.js",
+    "test-rpc": "node src/utils/testRpc.js",
+    "buy-test": "node src/buyFunction/cli.js"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.87.6",
+    "dotenv": "^16.3.1",
+    "bs58": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
